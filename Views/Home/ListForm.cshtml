@@ -1,0 +1,32 @@
+﻿@model WebappIVAN.Models.Submit
+@{
+    ViewData["Title"] = "ListForm";
+}
+
+<h2 class="text-center">Your Submission</h2>
+<table class="table-bordered text-uppercase">
+    <tr class="col-12 text-center">
+        <th><strong>Your Picks</strong></th>
+        
+    </tr>
+    <tr>
+        <td>@Model.Game1</td>
+        <td>@Model.Game2</td>
+        <td>@Model.Game3</td>
+        <td>@Model.Game4</td>
+        <td>@Model.Game5</td>
+        <td>@Model.Game6</td>
+        <td>@Model.Game7</td>
+        <td>@Model.Game8</td>
+        <td>@Model.Game9</td>
+        <td>@Model.Game10</td>
+        <td>@Model.Game11</td>
+        <td>@Model.Game12</td>
+        <td>@Model.Game13</td>
+        <td>@Model.Game14</td>
+    </tr>
+
+</table>
+<button class="button1 btn-block text-center" asp-controller="Home" asp-action="SubmitForm">Change Your Picks</button>
+<button class="button1 btn-block text-center" asp-controller="Home" asp-action="Index">Go To Home Page</button>
+

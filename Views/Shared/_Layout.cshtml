@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ivanspickems</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom mb-3">
+            <div class="container-fluid">
+                <a class=" logo-1" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="logo-1" src="~/ivans logo 2.PNG" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="d-sm-inline-flex flex-sm-row-reverse">
+                    <span>
+                    <partial name="_LoginPartial" />
+                    </span>
+                    <span style="cursor:pointer" onclick="openNav()">
+                        <button class="dropbtn">Menu</button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a asp-action="About" asp-controller="Home">About</a>
+        <a asp-action="FAQs" asp-controller="Home">FAQs</a>
+        <a asp-action="SubmitForm" asp-controller="Home">Submit Form</a>
+        <a asp-action="ViewLeaderboard" asp-controller="Home">Leaderboard</a>
+    </div>
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    <footer class="border-top footer d-sm-inline-flex flex-sm-row-reverse">
+        <div class="container">
+            &copy; 2020 - ivanspickems - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a  asp-area="" asp-controller="Home" asp-action="About">About</a>
+            <a  asp-area="" asp-controller="Home" asp-action="FAQs">FAQs</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

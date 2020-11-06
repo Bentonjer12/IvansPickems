@@ -1,0 +1,126 @@
+﻿@model WebappIVAN.Models.Submit
+
+@{
+    ViewData["Title"] = "SubmitForm";
+}
+
+<h1 class="text-center">SubmitForm</h1>
+@using (Html.BeginForm())
+
+    @Html.AntiForgeryToken()
+    <h4 class="text-center">Please Select from below</h4>
+    <hr />
+    <div class="row text-center">
+        <div class="input-radio select ">
+            <form asp-for="SubmitForm" method="post">
+                <div asp-validation-summary="ModelOnly" class="input-radio text-center"></div>
+                <h2>Thursday, November 8th</h2>
+                <div class="text-center">
+                    
+                    Green Bay Packers
+                    @Html.RadioButtonFor(model => model.Game1, "GBP")
+                    San Fransico 49ers
+                    @Html.RadioButtonFor(model => model.Game1, "SFR")
+                </div><br />
+                <h2>Sunday, November 8th</h2>
+                <div class="text-center">
+                   
+                    Denver Broncos
+                    @Html.RadioButtonFor(model => model.Game2, "DEN")
+                    Atlanta Falcons
+                    @Html.RadioButtonFor(model => model.Game2, "ATL")
+                </div><br />
+                      <div class="text-center">
+                          
+                          Seattle Seahawks
+                          @Html.RadioButtonFor(model => model.Game3, "SEA")
+                          Buffalo Bills
+                          @Html.RadioButtonFor(model => model.Game3, "BUF")
+                      </div><br />
+                            <div class="text-center">
+                                
+                                Chicago Bears
+                                @Html.RadioButtonFor(model => model.Game4, "CHI")
+                                Tennessee Titans
+                                @Html.RadioButtonFor(model => model.Game4, "TEN")
+                            </div><br />
+                                  <div class=" text-center">
+                                     
+                                      Baltimore Ravens
+                                      @Html.RadioButtonFor(model => model.Game5, "BAL")
+                                      Indianapolis Colts
+                                      @Html.RadioButtonFor(model => model.Game5, "IND")
+                                  </div><br />
+                                        <div class="text-center">
+                                            
+                                            Carolina Panthers
+                                            @Html.RadioButtonFor(model => model.Game6, "CAR")
+                                            Kansas City Chiefs
+                                            @Html.RadioButtonFor(model => model.Game6, "KAN")
+                                        </div><br />
+                                              <div class=" text-center">
+                                                  
+                                                  Detroit Lions
+                                                  @Html.RadioButtonFor(model => model.Game7, "DET")
+                                                  Minnesota Vikings
+                                                  @Html.RadioButtonFor(model => model.Game7, "MIN")
+                                              </div><br />
+                                                    <div class="text-center">
+                                                        
+                                                        New York Giants
+                                                        @Html.RadioButtonFor(model => model.Game8, "NEW")
+                                                        Washington Football Team
+                                                        @Html.RadioButtonFor(model => model.Game8, "WAS")
+                                                    </div><br />
+                                                          <div class="text-center">
+                                                              
+                                                              Houston Texans
+                                                              @Html.RadioButtonFor(model => model.Game9, "HOU")
+                                                              Jacksonville Jaguars
+                                                              @Html.RadioButtonFor(model => model.Game9, "JAC")
+                                                          </div><br />
+                                                                <div class="text-center">
+                                                                    
+                                                                    Las Vegas Raiders
+                                                                    @Html.RadioButtonFor(model => model.Game10, "LV")
+                                                                    Los Angeles Chargers
+                                                                    @Html.RadioButtonFor(model => model.Game10, "LA")
+                                                                </div><br />
+                                                                      <div class="text-center">
+                                                                          
+                                                                          Pittsburgh Steelers
+                                                                          @Html.RadioButtonFor(model => model.Game11, "PIT")
+                                                                          Dallas Cowboys
+                                                                          @Html.RadioButtonFor(model => model.Game11, "DAL")
+                                                                      </div><br />
+                <div class="text-center">
+                    
+                    Miami Dolphins
+                    @Html.RadioButtonFor(model => model.Game12, "MIA")
+                    Arizona Cardinals
+                    @Html.RadioButtonFor(model => model.Game12, "ARI")
+                </div><br />
+                      <div class=" text-center">
+                          
+                          New Orleans Saints
+                          @Html.RadioButtonFor(model => model.Game13, "NO")
+                          Tampa Bay Buccaneers
+                          @Html.RadioButtonFor(model => model.Game13, "TAM")
+                      </div><br />
+                <h2>Monday, November 9th</h2>
+                <div class=" text-center">
+                    
+                    New England Patriots
+                    @Html.RadioButtonFor(model => model.Game14, "PAT")
+                    New York Jets
+                    @Html.RadioButtonFor(model => model.Game14, "NEW")
+                </div><br />
+
+                <div class="form-group">
+                    <input type="submit" value="SubmitForm" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+   

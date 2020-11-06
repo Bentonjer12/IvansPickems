@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>Welcome to Ivan's Weekly NFL Pickems</h2>
+            <h5>10/28/2020</h5>
+            <div class="fakeimg1" style="height:450px;"></div>
+           
+            <p>This site was made to help Ivan with the office's weekly pickems. The scope of this project is to help keep all the weekly pickems information in one place. </p>
+            <p>Make all pickems choices as you would normally every week. This site will be updated with new features as the season progresses. </p>
+        </div>
+
+        <div class="card-1">
+            <h2>Site features</h2>
+            <h5></h5>
+            <div class="fakeimg2" style="height:200px;"></div>
+            <p>
+                <ul>
+                    <li>User login with the users information being handled by Microsoft's Azure cloud service</li>
+                    <li>Scoreboard that features a live running count of all player's current correct games</li>
+                    <li>Easy form for your weekly picks that includes all teams that are slated to play that week</li>
+                    <li>Admin support that will help with user creation and trouble tickets</li>
+                </ul>
+            </p>
+            <p>If you have any questions email Ivan at <a href="mailto:ivancobo@yahoo.com"> ivancobo@yahoo.com </a>or the site admin at <a href="mailto:ivanpickems.onmicrosoft.com"> ivanpickems.onmicrosoft.com </a>
+</p>
+</div>
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <div class="fakeimg3" ></div>
+            <div class="card">
+                <h2>How To Submit a Form</h2>
+                <p>To submit this week's pickem click the link below or select the Submit Form link on the menu tab. You will be prompted to login or create account using an email. Once you are logged in a form will be available for you. You can also view the current leaderboards once you are logged in as well.</p>
+                
+                    <a class="btn" asp-action="SubmitForm" asp-controller="Home">Submit Form</a>
+                    <a class="btn" asp-action="ViewLeaderboard" asp-controller="Home">Leaderboard</a>
+                
+                </div>
+        </div>
+        </div>
+    </div>
+
