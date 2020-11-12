@@ -1,5 +1,5 @@
 # IvansPickems
- NFL weekly pickems app for Office pool. Hosted in Azure.
+ NFL weekly pickems app for Office pool. ASP.NET MVC application hosted in Azure. Work in Progress-Est. completion 12/15/2020.
 ## Landing Page
  ![Ivan's Pickems home](https://github.com/Bentonjer12/IvansPickems/blob/main/Ivanspickems%20home%20page.PNG)
 ## Azure B2C Login page
